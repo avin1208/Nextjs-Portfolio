@@ -1,0 +1,117 @@
+.about{
+    background: #fafafa;
+    padding: 12rem 0;
+}
+
+.maincontainer{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.header{
+    margin-bottom: 9rem;
+}
+
+.headermain{
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
+}
+
+.after{
+    content: '';
+    position: absolute;
+    /* top: calc(100% + 1.5rem); */
+    height: 6px;
+    width: 2.3rem;
+    background: #facf0f;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    margin-top: -25px;
+}
+
+.section{
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 1.3rem;
+    /* font-weight: 500; */
+    max-width: 80rem;
+    margin: auto;
+    padding-top: 55px;
+    line-height: 1;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.contentmain{
+
+}
+
+.contentmain_title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.contentmain_detail{
+    font-size: 1.4rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.contact{
+    background: #facf0f;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    transition: transform .3s;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact:hover{
+    transform: translateY(-0.6rem);
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.skillsname{
+    padding: 0.8rem 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    background: rgba(153,153,153,.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+}
+
+.skillsname:hover{
+    background-color: lightgray;
+    transition: background-color 0.6s ease
+}

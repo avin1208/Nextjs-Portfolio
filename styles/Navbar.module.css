@@ -1,0 +1,29 @@
+.mainnav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 10px 100pxrgba(0,0,0,.1);
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainnav ul{
+    justify-content: flex-end;
+    gap: 55px;
+    margin-top: 25px;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.mainnav ul li:hover,
+.mainnav ul li:focus,
+.mainnav ul li:active{
+  color: #facf0f;
+  transition: color 0.4s ease
+}
