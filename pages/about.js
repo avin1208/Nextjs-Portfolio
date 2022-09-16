@@ -1,65 +1,39 @@
 import Link from 'next/link';
 import React from 'react';
-import styles from '../styles/About.module.css';
 
 const About = () => {
     return (
-        <div className={styles.about}>
-        <style jsx>
-        {
-          `
-      a {
-        background: #facf0f;
-        color: #333;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        display: inline-block;
-        font-weight: 700;
-        border-radius: 5px;
-        box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
-        transition: transform .3s;
-        padding: 1rem 2.5rem;
-        font-size: 1rem;
-        border: none;
-        cursor: pointer;
-      }
-      a:hover{
-        transform: translateY(-0.6rem);
-        box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
-      }
-      `
-        }
-      </style>
-            <div className={styles.maincontainer}>
-                <div className={styles.header}>
-                    <span className={styles.headermain}>
+        <div className="bg-white py-80">
+            <div className="max-w-screen-2xl m-auto w-11/12 mt-24">
+                <div className="mb-36">
+                    <span className="block text-5xl uppercase tracking-wider font-medium text-center mb-14 relative text-black">
                         ABOUT ME
                     </span>
-                    <span className={styles.after}>
+                    <span className="absolute content-none h-6 mt-20 w-35 bg-yellow-400 left-2/4 rounded-md mb-6 ">
 
                     </span>
-                    <div className={styles.section}>
+                    <div className="block text-center text-gray-600 text-lg max-w-7xl m-auto pt-48 mt-40">
                         Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
                     </div>
                 </div>
-                <div className={styles.content}>
-                    <div className={styles.contentmain}>
-                        <h3 className={styles.contentmain_title}>
+                <div className="grid grid-cols-2 gap-48">
+                    <div>
+                        <h3 className="font-bold text-4xl mb-40">
                             Get to know me!
                         </h3>
                         <div>
-                            <p className={styles.contentmain_detail}>
+                            <p className="text-lg text-gray-600 max-w-5xl mb-15">
                                 I'm a <strong>Frontend Web Developer</strong>
                                 building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the
                                 <strong>Projects</strong>
                                 section.
                             </p>
-                            <p className={styles.contentmain_detail}>
+                            <p className="text-lg text-gray-600 max-w-5xl mb-15">
                                 I also like sharing content related to the stuff that I have learned over the years in
                                 <strong>Web Development</strong>
                                 so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming.
                             </p>
-                            <p className={styles.contentmain_detail}>
+                            <p className="text-lg text-gray-600 max-w-5xl mb-15">
                                 I'm open to
                                 <strong>Job</strong>
                                 opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to
@@ -67,45 +41,45 @@ const About = () => {
                                 me.
                             </p>
                         </div>
-                        <Link href="/contact" className={styles.contact}>
-                            <a>
+                        <Link href="/contact" >
+                            <a className="bg-yellow-400 text-black uppercase tracking-wider inline-block font-bold rounded-md transition duration-150 py-12 px-28 text-lg border-none cursor-pointer hover:translate-y-4 shadow-lg shadow-zinc-200 ">
                             Contact
                             </a>
                         </Link>
                     </div>
-                    <div className={styles.contentmain}>
-                        <h3 className={styles.contentmain_title}>
+                    <div>
+                        <h3 className="font-bold text-4xl mb-40">
                             My skills
                         </h3>
-                        <div className={styles.skills}>
-                            <div className={styles.skillsname}>
+                        <div className="flex-wrap flex gap-12">
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 HTML
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 CSS
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 JavaScript
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 TypeScript
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 React
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 SASS
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 GIT
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 Responsive Design
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 GITLAB
                             </div>
-                            <div className={styles.skillsname}>
+                            <div className="py-2 h-fit px-3.5 mb-6 mr-6 text-lg bg-gray-100 rounded-md font-semibold text-gray-500 cursor-pointer hover:bg-gray-300 ease-in">
                                 NEXT JS
                             </div>
                         </div>
